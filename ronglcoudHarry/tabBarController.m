@@ -7,13 +7,15 @@
 //
 
 #import "tabBarController.h"
-
+#import "chatVC.h"
 @implementation tabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIViewController *view1 = [[UIViewController alloc] init];
+    //chatVC *chatvc = [[chatVC alloc] init];
+    
+    chatVC *view1 = [[chatVC alloc] init];
     UIViewController *view2 = [[UIViewController alloc] init];
     UIViewController *view3 = [[UIViewController alloc] init];
     
