@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */; };
 		2FC5D7AB1CDADCB100916655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AA1CDADCB100916655 /* main.m */; };
 		2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AD1CDADCB100916655 /* AppDelegate.m */; };
 		2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7B01CDADCB100916655 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarController.h; sourceTree = "<group>"; };
+		2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarController.m; sourceTree = "<group>"; };
 		2FC5D7A61CDADCB000916655 /* ronglcoudHarry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ronglcoudHarry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC5D7AA1CDADCB100916655 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FC5D7AC1CDADCB100916655 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				2FC5D7AC1CDADCB100916655 /* AppDelegate.h */,
 				2FC5D7AD1CDADCB100916655 /* AppDelegate.m */,
+				2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */,
+				2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */,
 				2FC5D7AF1CDADCB100916655 /* ViewController.h */,
 				2FC5D7B01CDADCB100916655 /* ViewController.m */,
 				2FC5D7B21CDADCB100916655 /* Main.storyboard */,
@@ -272,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */,
+				2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */,
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
 			);
@@ -503,6 +509,7 @@
 				2FC5D7D51CDADCB100916655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FC5D7D61CDADCB100916655 /* Build configuration list for PBXNativeTarget "ronglcoudHarryTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +518,7 @@
 				2FC5D7D81CDADCB100916655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FC5D7D91CDADCB100916655 /* Build configuration list for PBXNativeTarget "ronglcoudHarryUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +527,7 @@
 				2FC5D7DB1CDADCB100916655 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

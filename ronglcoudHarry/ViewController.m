@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "tabBarController.h"
 @interface ViewController ()
 
 @end
@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    tabBarController *mytabbar = [[tabBarController alloc] init];
+    [self.navigationController pushViewController:mytabbar animated:YES];
+    //[self.navigationController push]
     // Do any additional setup after loading the view, typically from a nib.
 }
 
