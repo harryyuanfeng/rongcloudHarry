@@ -5,6 +5,8 @@
 
 target 'ronglcoudHarry' do
 pod 'RongCloudIMKit', '2.4.0'
+source 'https://github.com/CocoaPods/Specs.git'
+pod 'AFNetworking', '~> 3.0'
 end
 
 target 'ronglcoudHarryTests' do
