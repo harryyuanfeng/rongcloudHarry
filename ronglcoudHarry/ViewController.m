@@ -16,10 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    tabBarController *mytabbar = [[tabBarController alloc] init];
-    [self.navigationController pushViewController:mytabbar animated:YES];
+    
     //[self.navigationController push]
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[RCIM sharedRCIM] initWithAppKey:@"sfci50a7c2l9i"];
+    NSDictionary *parameters = @{@"username": @"harry",@"id": @"001",@"imageUrl": @"bar"};
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:@"http://localhost:3000/getRongToken" parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSString *results = [responseObject valueForKey:@"token"];
+        tabBarController *mytabbar = [[tabBarController alloc] init];
+        
+        [self.navigationController pushViewController:mytabbar animated:YES];
+        NSLog(@"JSON: %@", responseObject);
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
