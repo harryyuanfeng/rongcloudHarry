@@ -20,6 +20,7 @@
     // Override point for customization after application launch.
     
     [RCIM sharedRCIM].globalConversationAvatarStyle = RC_USER_AVATAR_CYCLE;
+    [RCIM sharedRCIM].globalMessageAvatarStyle = RC_USER_AVATAR_CYCLE;
     
     return YES;
 }
