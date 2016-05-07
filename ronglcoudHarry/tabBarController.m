@@ -27,11 +27,11 @@
     [self setViewControllers:tabViewControllers];
     //can't set this until after its added to the tab bar
     view1.tabBarItem =
-    [[UITabBarItem alloc] initWithTitle:@"view1"
+    [[UITabBarItem alloc] initWithTitle:@"聊天"
                                   image:[UIImage imageNamed:@"view1"]
                                     tag:1];
     view2.tabBarItem =
-    [[UITabBarItem alloc] initWithTitle:@"view2"
+    [[UITabBarItem alloc] initWithTitle:@"通讯录"
                                   image:[UIImage imageNamed:@"view3"]
                                     tag:2];
     view3.tabBarItem =
