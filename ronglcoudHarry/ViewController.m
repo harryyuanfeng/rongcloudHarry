@@ -19,20 +19,24 @@
     
     //[self.navigationController push]
     // Do any additional setup after loading the view, typically from a nib.
+     [[RCIM sharedRCIM] initWithAppKey:@"sfci50a7c2l9i"];
+    tabBarController *mytabbar = [[tabBarController alloc] init];
     
-    [[RCIM sharedRCIM] initWithAppKey:@"sfci50a7c2l9i"];
+    [self.navigationController pushViewController:mytabbar animated:YES];
+
+    
+}
+
+-(void)getToken{
+   
     NSDictionary *parameters = @{@"username": @"harry",@"id": @"001",@"imageUrl": @"bar"};
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    [manager POST:@"http://localhost:3000/getRongToken" parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    [manager POST:@"http://xiaoyouquan.leanapp.cn/getRongToken" parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         NSString *results = [responseObject valueForKey:@"token"];
-        tabBarController *mytabbar = [[tabBarController alloc] init];
-        
-        [self.navigationController pushViewController:mytabbar animated:YES];
-        NSLog(@"JSON: %@", responseObject);
+               NSLog(@"JSON: %@", responseObject);
     } failure:^(NSURLSessionTask *operation, NSError *error) {
-        NSLog(@"Error: %@", error); 
+        NSLog(@"Error: %@", error);
     }];
-    
 }
 
 

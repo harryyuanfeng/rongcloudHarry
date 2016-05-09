@@ -8,6 +8,7 @@
 
 #import "tabBarController.h"
 #import "chatVC.h"
+#import "groupChatViewController.h"
 @implementation tabBarController
 
 - (void)viewDidLoad {
@@ -16,7 +17,7 @@
     //chatVC *chatvc = [[chatVC alloc] init];
     
     chatVC *view1 = [[chatVC alloc] init];
-    UIViewController *view2 = [[UIViewController alloc] init];
+    groupChatViewController *view2 = [[groupChatViewController alloc] init];
     UIViewController *view3 = [[UIViewController alloc] init];
     
     NSMutableArray *tabViewControllers = [[NSMutableArray alloc] init];
@@ -25,13 +26,14 @@
     [tabViewControllers addObject:view3];
     
     [self setViewControllers:tabViewControllers];
+    [self setSelectedIndex:1];
     //can't set this until after its added to the tab bar
     view1.tabBarItem =
     [[UITabBarItem alloc] initWithTitle:@"聊天"
                                   image:[UIImage imageNamed:@"view1"]
                                     tag:1];
     view2.tabBarItem =
-    [[UITabBarItem alloc] initWithTitle:@"通讯录"
+    [[UITabBarItem alloc] initWithTitle:@"群聊"
                                   image:[UIImage imageNamed:@"view3"]
                                     tag:2];
     view3.tabBarItem =

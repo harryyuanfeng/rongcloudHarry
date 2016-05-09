@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1326DC1CDF35420037F28E /* groupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326DB1CDF35420037F28E /* groupChatViewController.m */; };
 		2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */; };
 		2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9389D1CDB40AB0059FF52 /* chatVC.m */; };
 		2FC5D7AB1CDADCB100916655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AA1CDADCB100916655 /* main.m */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		26CE9FFD985B47B83EC6C05A /* Pods-ronglcoudHarry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.release.xcconfig"; sourceTree = "<group>"; };
+		2F1326DA1CDF35420037F28E /* groupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupChatViewController.h; sourceTree = "<group>"; };
+		2F1326DB1CDF35420037F28E /* groupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupChatViewController.m; sourceTree = "<group>"; };
 		2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarController.h; sourceTree = "<group>"; };
 		2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarController.m; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				2FA9389C1CDB40AB0059FF52 /* chatVC.h */,
 				2FA9389D1CDB40AB0059FF52 /* chatVC.m */,
 				2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */,
+				2F1326DA1CDF35420037F28E /* groupChatViewController.h */,
+				2F1326DB1CDF35420037F28E /* groupChatViewController.m */,
 			);
 			path = ronglcoudHarry;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 			files = (
 				2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */,
 				2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */,
+				2F1326DC1CDF35420037F28E /* groupChatViewController.m in Sources */,
 				2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */,
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
