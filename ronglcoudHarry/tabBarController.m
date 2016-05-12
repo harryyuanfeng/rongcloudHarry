@@ -9,6 +9,9 @@
 #import "tabBarController.h"
 #import "chatVC.h"
 #import "groupChatViewController.h"
+#import "UserSignUpViewController.h"
+#import "LoginViewController.h";
+#import "OtherViewController.h";
 @implementation tabBarController
 
 - (void)viewDidLoad {
@@ -18,15 +21,18 @@
     
     chatVC *view1 = [[chatVC alloc] init];
     groupChatViewController *view2 = [[groupChatViewController alloc] init];
-    UIViewController *view3 = [[UIViewController alloc] init];
-    
+    UserSignUpViewController *view3 = [[UserSignUpViewController alloc] init];
+    LoginViewController *view4 = [[LoginViewController alloc] init];
+    OtherViewController *view5 = [[OtherViewController alloc] init];
     NSMutableArray *tabViewControllers = [[NSMutableArray alloc] init];
     [tabViewControllers addObject:view1];
     [tabViewControllers addObject:view2];
     [tabViewControllers addObject:view3];
+    [tabViewControllers addObject:view4];
+    [tabViewControllers addObject:view5];
     
     [self setViewControllers:tabViewControllers];
-    [self setSelectedIndex:1];
+    [self setSelectedIndex:4];
     //can't set this until after its added to the tab bar
     view1.tabBarItem =
     [[UITabBarItem alloc] initWithTitle:@"聊天"
@@ -37,9 +43,18 @@
                                   image:[UIImage imageNamed:@"view3"]
                                     tag:2];
     view3.tabBarItem =
-    [[UITabBarItem alloc] initWithTitle:@"view3"
+    [[UITabBarItem alloc] initWithTitle:@"注册"
                                   image:[UIImage imageNamed:@"view3"]
                                     tag:3];
+
+    view4.tabBarItem =
+    [[UITabBarItem alloc] initWithTitle:@"登录"
+                                  image:[UIImage imageNamed:@"view4"]
+                                    tag:4];
+    view5.tabBarItem =
+    [[UITabBarItem alloc] initWithTitle:@"其他"
+                                  image:[UIImage imageNamed:@"view5"]
+                                    tag:5];
 }
 
 @end

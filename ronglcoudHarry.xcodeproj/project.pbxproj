@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2F1326DC1CDF35420037F28E /* groupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326DB1CDF35420037F28E /* groupChatViewController.m */; };
+		2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */; };
+		2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E11CE035D40037F28E /* LoginViewController.m */; };
+		2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E41CE046950037F28E /* DataBaseUtillity.m */; };
+		2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */; };
 		2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */; };
 		2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9389D1CDB40AB0059FF52 /* chatVC.m */; };
 		2FC5D7AB1CDADCB100916655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AA1CDADCB100916655 /* main.m */; };
@@ -18,6 +22,10 @@
 		2FC5D7B91CDADCB100916655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5D7B71CDADCB100916655 /* LaunchScreen.storyboard */; };
 		2FC5D7C41CDADCB100916655 /* ronglcoudHarryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7C31CDADCB100916655 /* ronglcoudHarryTests.m */; };
 		2FC5D7CF1CDADCB100916655 /* ronglcoudHarryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7CE1CDADCB100916655 /* ronglcoudHarryUITests.m */; };
+		2FF3732E1CE339440040B140 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3732D1CE339440040B140 /* OtherViewController.m */; };
+		2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373311CE41CF00040B140 /* LoadMoreViewController.m */; };
+		2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373341CE41D3F0040B140 /* WevViewViewController.m */; };
+		2FF373371CE43E490040B140 /* MJRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 2FF373361CE43E490040B140 /* MJRefresh */; };
 		648A5AE0A4426DEE60973F08 /* libPods-ronglcoudHarry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +50,15 @@
 		26CE9FFD985B47B83EC6C05A /* Pods-ronglcoudHarry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.release.xcconfig"; sourceTree = "<group>"; };
 		2F1326DA1CDF35420037F28E /* groupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupChatViewController.h; sourceTree = "<group>"; };
 		2F1326DB1CDF35420037F28E /* groupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupChatViewController.m; sourceTree = "<group>"; };
+		2F1326DD1CE02F2D0037F28E /* UserSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSignUpViewController.h; sourceTree = "<group>"; };
+		2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSignUpViewController.m; sourceTree = "<group>"; };
+		2F1326E01CE035D40037F28E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2F1326E11CE035D40037F28E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2F1326E31CE046950037F28E /* DataBaseUtillity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseUtillity.h; sourceTree = "<group>"; };
+		2F1326E41CE046950037F28E /* DataBaseUtillity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseUtillity.m; sourceTree = "<group>"; };
 		2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2F43AE711CE1A7E600FDEFBE /* DBASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBASingleton.h; sourceTree = "<group>"; };
+		2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBASingleton.m; sourceTree = "<group>"; };
 		2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarController.h; sourceTree = "<group>"; };
 		2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarController.m; sourceTree = "<group>"; };
 		2FA9389C1CDB40AB0059FF52 /* chatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatVC.h; sourceTree = "<group>"; };
@@ -63,6 +79,13 @@
 		2FC5D7CA1CDADCB100916655 /* ronglcoudHarryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ronglcoudHarryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC5D7CE1CDADCB100916655 /* ronglcoudHarryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ronglcoudHarryUITests.m; sourceTree = "<group>"; };
 		2FC5D7D01CDADCB100916655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF3732C1CE339440040B140 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		2FF3732D1CE339440040B140 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		2FF373301CE41CF00040B140 /* LoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
+		2FF373311CE41CF00040B140 /* LoadMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreViewController.m; sourceTree = "<group>"; };
+		2FF373331CE41D3F0040B140 /* WevViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WevViewViewController.h; sourceTree = "<group>"; };
+		2FF373341CE41D3F0040B140 /* WevViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WevViewViewController.m; sourceTree = "<group>"; };
+		2FF373361CE43E490040B140 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MJRefresh; sourceTree = "<group>"; };
 		5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB1EE70EB81A2E566B9752B /* Pods-ronglcoudHarry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1326E61CE0469E0037F28E /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				2F1326E31CE046950037F28E /* DataBaseUtillity.h */,
+				2F1326E41CE046950037F28E /* DataBaseUtillity.m */,
+				2F43AE711CE1A7E600FDEFBE /* DBASingleton.h */,
+				2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
 		2FC5D79D1CDADCB000916655 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +152,7 @@
 		2FC5D7A81CDADCB100916655 /* ronglcoudHarry */ = {
 			isa = PBXGroup;
 			children = (
+				2FF373361CE43E490040B140 /* MJRefresh */,
 				2FC5D7AC1CDADCB100916655 /* AppDelegate.h */,
 				2FC5D7AD1CDADCB100916655 /* AppDelegate.m */,
 				2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */,
@@ -134,6 +169,12 @@
 				2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */,
 				2F1326DA1CDF35420037F28E /* groupChatViewController.h */,
 				2F1326DB1CDF35420037F28E /* groupChatViewController.m */,
+				2F1326DD1CE02F2D0037F28E /* UserSignUpViewController.h */,
+				2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */,
+				2F1326E01CE035D40037F28E /* LoginViewController.h */,
+				2F1326E11CE035D40037F28E /* LoginViewController.m */,
+				2F1326E61CE0469E0037F28E /* DataBase */,
+				2FF3732F1CE33AC90040B140 /* OtherViewController */,
 			);
 			path = ronglcoudHarry;
 			sourceTree = "<group>";
@@ -162,6 +203,19 @@
 				2FC5D7D01CDADCB100916655 /* Info.plist */,
 			);
 			path = ronglcoudHarryUITests;
+			sourceTree = "<group>";
+		};
+		2FF3732F1CE33AC90040B140 /* OtherViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2FF3732C1CE339440040B140 /* OtherViewController.h */,
+				2FF3732D1CE339440040B140 /* OtherViewController.m */,
+				2FF373301CE41CF00040B140 /* LoadMoreViewController.h */,
+				2FF373311CE41CF00040B140 /* LoadMoreViewController.m */,
+				2FF373331CE41D3F0040B140 /* WevViewViewController.h */,
+				2FF373341CE41D3F0040B140 /* WevViewViewController.m */,
+			);
+			name = OtherViewController;
 			sourceTree = "<group>";
 		};
 		4EB307424EFA2C0FF8836A47 /* Frameworks */ = {
@@ -291,6 +345,7 @@
 				2FC5D7B91CDADCB100916655 /* LaunchScreen.storyboard in Resources */,
 				2FC5D7B61CDADCB100916655 /* Assets.xcassets in Resources */,
 				2FC5D7B41CDADCB100916655 /* Main.storyboard in Resources */,
+				2FF373371CE43E490040B140 /* MJRefresh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,11 +418,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */,
+				2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */,
+				2FF3732E1CE339440040B140 /* OtherViewController.m in Sources */,
+				2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */,
 				2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */,
+				2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */,
+				2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */,
 				2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */,
 				2F1326DC1CDF35420037F28E /* groupChatViewController.m in Sources */,
 				2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */,
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
+				2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
