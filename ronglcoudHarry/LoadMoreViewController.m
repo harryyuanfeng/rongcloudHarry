@@ -27,7 +27,22 @@
 }
 
 -(void)headerRefresh{
-    
+    AVQuery *query = [AVQuery queryWithClassName:@"TODO"];
+    query.limit = 30;
+    query.skip = 0;
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        [self.secondTableView.mj_header endRefreshing];
+        if (error) {
+            NSLog(@"error : %@", error.description);
+        }
+        else {
+            [self.adArray removeAllObjects];
+            [self.adArray addObjectsFromArray:objects];
+            
+            [self.secondTableView reloadData];
+        }
+    }];
 }
 
 - (void)viewDidLoad {
@@ -51,16 +66,20 @@
 #pragma mark - TableView DataSource Implementation
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.adArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    AVObject *data = self.adArray[indexPath.row];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-    label.text = @"label view";
+    label.text = data[@"name"];
     label.textColor = [UIColor blueColor];
+    [[cell.contentView viewWithTag:500] removeFromSuperview];
+    label.tag = 500;
     [[cell contentView] addSubview:label];
     //cell.textLabel.text = @"111";
     //cell.titleLabel.text = @"aaa";
@@ -73,13 +92,13 @@
     return _adArray;
 }
 - (void)footerLoadmore {
-    AVQuery *query = [AVQuery queryWithClassName:@"AdList"];
-    query.limit = 3;
+    AVQuery *query = [AVQuery queryWithClassName:@"TODO"];
+    query.limit = 30;
     query.skip = self.adArray.count;
     [query orderByDescending:@"createdAt"];
-    [query whereKey:@"adState" equalTo:@1];
+    //[query whereKey:@"adState" equalTo:@1];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        //[self->secondTableView.mj_footer endRefreshing];
+        [self.secondTableView.mj_footer endRefreshing];
         if (error) {
             NSLog(@"error : %@", error.description);
         }

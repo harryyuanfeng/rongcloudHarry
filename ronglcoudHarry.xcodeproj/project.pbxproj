@@ -26,6 +26,7 @@
 		2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373311CE41CF00040B140 /* LoadMoreViewController.m */; };
 		2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373341CE41D3F0040B140 /* WevViewViewController.m */; };
 		2FF373371CE43E490040B140 /* MJRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 2FF373361CE43E490040B140 /* MJRefresh */; };
+		2FF3733A1CE478F70040B140 /* YouMengViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373391CE478F70040B140 /* YouMengViewController.m */; };
 		648A5AE0A4426DEE60973F08 /* libPods-ronglcoudHarry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,8 @@
 		2FF373331CE41D3F0040B140 /* WevViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WevViewViewController.h; sourceTree = "<group>"; };
 		2FF373341CE41D3F0040B140 /* WevViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WevViewViewController.m; sourceTree = "<group>"; };
 		2FF373361CE43E490040B140 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MJRefresh; sourceTree = "<group>"; };
+		2FF373381CE478F70040B140 /* YouMengViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouMengViewController.h; sourceTree = "<group>"; };
+		2FF373391CE478F70040B140 /* YouMengViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouMengViewController.m; sourceTree = "<group>"; };
 		5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB1EE70EB81A2E566B9752B /* Pods-ronglcoudHarry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +217,8 @@
 				2FF373311CE41CF00040B140 /* LoadMoreViewController.m */,
 				2FF373331CE41D3F0040B140 /* WevViewViewController.h */,
 				2FF373341CE41D3F0040B140 /* WevViewViewController.m */,
+				2FF373381CE478F70040B140 /* YouMengViewController.h */,
+				2FF373391CE478F70040B140 /* YouMengViewController.m */,
 			);
 			name = OtherViewController;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
 				2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
+				2FF3733A1CE478F70040B140 /* YouMengViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

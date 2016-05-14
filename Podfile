@@ -11,6 +11,7 @@ pod 'AVOSCloud'
 pod 'DBCamera', '~> 2.4'
 pod 'NJKWebViewProgress'
 pod 'MJRefresh'
+pod 'UMengSocialCOM', '~> 5.1'
 end
 
 target 'ronglcoudHarryTests' do

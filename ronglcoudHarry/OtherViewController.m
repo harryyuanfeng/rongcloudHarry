@@ -11,12 +11,14 @@
 #import "DBCameraContainerViewController.h"
 #import "WevViewViewController.h"
 #import "LoadMoreViewController.h"
+#import "YouMengViewController.h"
 @interface OtherViewController ()<DBCameraViewControllerDelegate>
 
 @end
 UIButton *DBCamera;
 UIButton *WebViewButton;
 UIButton *loadMore;
+UIButton *youmeng;
 @implementation OtherViewController
 
 - (void)viewDidLoad {
@@ -47,9 +49,22 @@ UIButton *loadMore;
     [loadMore setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:loadMore];
     
+    youmeng = [[UIButton alloc] initWithFrame:CGRectMake(100, 280, 200, 30)];
+    [youmeng addTarget:self action:@selector(clickyoumeng) forControlEvents:UIControlEventTouchDown];
+    [youmeng setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [youmeng setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [youmeng setTitle:@"loadMore" forState:UIControlStateNormal];
+    [youmeng setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:youmeng];
+    
     
     // Do any additional setup after loading the view.
 }
+
+-(void)clickyoumeng{
+    
+}
+
 -(void)clickWebViewButton{
     WevViewViewController *webview = [[WevViewViewController alloc] init];
     [self.navigationController pushViewController:webview animated:YES];
