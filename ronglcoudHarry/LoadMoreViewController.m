@@ -45,6 +45,33 @@
     }];
 }
 
+-(NSString *)getString{
+    return @"hello";
+}
+
+-(NSArray *)getArray{
+    AVQuery *query = [AVQuery queryWithClassName:@"TODO"];
+    query.limit = 30;
+    query.skip = 0;
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        [self.secondTableView.mj_header endRefreshing];
+        if (error) {
+            NSLog(@"error : %@", error.description);
+        }
+        else {
+            [self.adArray removeAllObjects];
+            [self.adArray addObjectsFromArray:objects];
+            
+            [self.secondTableView reloadData];
+        }
+        //return objects;
+    }];
+    return [[NSArray alloc] init];
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor grayColor]];
