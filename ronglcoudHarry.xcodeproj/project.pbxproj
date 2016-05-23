@@ -12,7 +12,14 @@
 		2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E11CE035D40037F28E /* LoginViewController.m */; };
 		2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E41CE046950037F28E /* DataBaseUtillity.m */; };
 		2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */; };
+		2F5D929A1CEE0D3300CC4251 /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */; };
 		2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */; };
+		2F6810FB1CEF16D300ECC09A /* NSNotificationCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6810FA1CEF16D300ECC09A /* NSNotificationCenterViewController.m */; };
+		2F6811011CF0312B00ECC09A /* CurrentUserAddObjViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6811001CF0312B00ECC09A /* CurrentUserAddObjViewController.m */; };
+		2F6811041CF0767000ECC09A /* studentModelGlobalVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6811031CF0767000ECC09A /* studentModelGlobalVariable.m */; };
+		2F6D751D1CF30A340026B79E /* containedInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F6D751C1CF30A340026B79E /* containedInViewController.m */; };
+		2FA3B8A21CF1A5AE003D98EF /* RCDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3B8A11CF1A5AE003D98EF /* RCDChatViewController.m */; };
+		2FA3B8A51CF1D62E003D98EF /* recursiveBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */; };
 		2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9389D1CDB40AB0059FF52 /* chatVC.m */; };
 		2FC5D7AB1CDADCB100916655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AA1CDADCB100916655 /* main.m */; };
 		2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7AD1CDADCB100916655 /* AppDelegate.m */; };
@@ -26,7 +33,9 @@
 		2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373311CE41CF00040B140 /* LoadMoreViewController.m */; };
 		2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373341CE41D3F0040B140 /* WevViewViewController.m */; };
 		2FF373371CE43E490040B140 /* MJRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 2FF373361CE43E490040B140 /* MJRefresh */; };
-		648A5AE0A4426DEE60973F08 /* libPods-ronglcoudHarry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */; };
+		53AC9DBB0ACC3E2DA74C1D0A /* libPods-ronglcoudHarryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C722733078AE77C26A1D5E8F /* libPods-ronglcoudHarryTests.a */; };
+		6DC0E0095B1AC14888B5D934 /* libPods-ronglcoudHarry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82653ACD7000D56FD5DF4302 /* libPods-ronglcoudHarry.a */; };
+		B0029107D9F560B64A93ACF6 /* libPods-ronglcoudHarryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAD69980C00AB2A45DFE18D /* libPods-ronglcoudHarryUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26CE9FFD985B47B83EC6C05A /* Pods-ronglcoudHarry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.release.xcconfig"; sourceTree = "<group>"; };
+		1E5D7CF9EEADEEA55B9FDBC2 /* Pods-ronglcoudHarryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarryUITests/Pods-ronglcoudHarryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F1326DA1CDF35420037F28E /* groupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupChatViewController.h; sourceTree = "<group>"; };
 		2F1326DB1CDF35420037F28E /* groupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupChatViewController.m; sourceTree = "<group>"; };
 		2F1326DD1CE02F2D0037F28E /* UserSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSignUpViewController.h; sourceTree = "<group>"; };
@@ -59,8 +68,22 @@
 		2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2F43AE711CE1A7E600FDEFBE /* DBASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBASingleton.h; sourceTree = "<group>"; };
 		2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBASingleton.m; sourceTree = "<group>"; };
+		2F5D92981CEE0D3300CC4251 /* SDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
+		2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
 		2F65AD7E1CDB2A5C009962F9 /* tabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabBarController.h; sourceTree = "<group>"; };
 		2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabBarController.m; sourceTree = "<group>"; };
+		2F6810F91CEF16D300ECC09A /* NSNotificationCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSNotificationCenterViewController.h; sourceTree = "<group>"; };
+		2F6810FA1CEF16D300ECC09A /* NSNotificationCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSNotificationCenterViewController.m; sourceTree = "<group>"; };
+		2F6810FF1CF0312B00ECC09A /* CurrentUserAddObjViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUserAddObjViewController.h; sourceTree = "<group>"; };
+		2F6811001CF0312B00ECC09A /* CurrentUserAddObjViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUserAddObjViewController.m; sourceTree = "<group>"; };
+		2F6811021CF0767000ECC09A /* studentModelGlobalVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = studentModelGlobalVariable.h; sourceTree = "<group>"; };
+		2F6811031CF0767000ECC09A /* studentModelGlobalVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = studentModelGlobalVariable.m; sourceTree = "<group>"; };
+		2F6D751B1CF30A340026B79E /* containedInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = containedInViewController.h; sourceTree = "<group>"; };
+		2F6D751C1CF30A340026B79E /* containedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = containedInViewController.m; sourceTree = "<group>"; };
+		2FA3B8A01CF1A5AE003D98EF /* RCDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDChatViewController.h; sourceTree = "<group>"; };
+		2FA3B8A11CF1A5AE003D98EF /* RCDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDChatViewController.m; sourceTree = "<group>"; };
+		2FA3B8A31CF1D62E003D98EF /* recursiveBlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recursiveBlockViewController.h; sourceTree = "<group>"; };
+		2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recursiveBlockViewController.m; sourceTree = "<group>"; };
 		2FA9389C1CDB40AB0059FF52 /* chatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatVC.h; sourceTree = "<group>"; };
 		2FA9389D1CDB40AB0059FF52 /* chatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatVC.m; sourceTree = "<group>"; };
 		2FC5D7A61CDADCB000916655 /* ronglcoudHarry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ronglcoudHarry.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +109,14 @@
 		2FF373331CE41D3F0040B140 /* WevViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WevViewViewController.h; sourceTree = "<group>"; };
 		2FF373341CE41D3F0040B140 /* WevViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WevViewViewController.m; sourceTree = "<group>"; };
 		2FF373361CE43E490040B140 /* MJRefresh */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MJRefresh; sourceTree = "<group>"; };
-		5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB1EE70EB81A2E566B9752B /* Pods-ronglcoudHarry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.debug.xcconfig"; sourceTree = "<group>"; };
+		72F70620D415290DE9E2DAEA /* Pods-ronglcoudHarryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarryTests/Pods-ronglcoudHarryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82653ACD7000D56FD5DF4302 /* libPods-ronglcoudHarry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAD69980C00AB2A45DFE18D /* libPods-ronglcoudHarryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03E8367137E4353D0B36D2D /* Pods-ronglcoudHarryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarryUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarryUITests/Pods-ronglcoudHarryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C722733078AE77C26A1D5E8F /* libPods-ronglcoudHarryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ronglcoudHarryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38649E9AF4B4CC6C6849F1F /* Pods-ronglcoudHarry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.debug.xcconfig"; sourceTree = "<group>"; };
+		D72682A2006F514B65A32607 /* Pods-ronglcoudHarry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarry.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry.release.xcconfig"; sourceTree = "<group>"; };
+		F1D0CA6C95EAE4BC6EBF5A6C /* Pods-ronglcoudHarryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ronglcoudHarryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ronglcoudHarryTests/Pods-ronglcoudHarryTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				648A5AE0A4426DEE60973F08 /* libPods-ronglcoudHarry.a in Frameworks */,
+				6DC0E0095B1AC14888B5D934 /* libPods-ronglcoudHarry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53AC9DBB0ACC3E2DA74C1D0A /* libPods-ronglcoudHarryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0029107D9F560B64A93ACF6 /* libPods-ronglcoudHarryUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +158,15 @@
 			name = DataBase;
 			sourceTree = "<group>";
 		};
+		2F6811051CF0767500ECC09A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F6811021CF0767000ECC09A /* studentModelGlobalVariable.h */,
+				2F6811031CF0767000ECC09A /* studentModelGlobalVariable.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		2FC5D79D1CDADCB000916655 = {
 			isa = PBXGroup;
 			children = (
@@ -134,8 +174,8 @@
 				2FC5D7C21CDADCB100916655 /* ronglcoudHarryTests */,
 				2FC5D7CD1CDADCB100916655 /* ronglcoudHarryUITests */,
 				2FC5D7A71CDADCB000916655 /* Products */,
-				E4B94D8B9021842D642D26AD /* Pods */,
-				4EB307424EFA2C0FF8836A47 /* Frameworks */,
+				3B69873201F4DAC301A92774 /* Pods */,
+				FE6B1F9C1C0634CA512B9D99 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +215,8 @@
 				2F1326E11CE035D40037F28E /* LoginViewController.m */,
 				2F1326E61CE0469E0037F28E /* DataBase */,
 				2FF3732F1CE33AC90040B140 /* OtherViewController */,
+				2FA3B8A01CF1A5AE003D98EF /* RCDChatViewController.h */,
+				2FA3B8A11CF1A5AE003D98EF /* RCDChatViewController.m */,
 			);
 			path = ronglcoudHarry;
 			sourceTree = "<group>";
@@ -208,31 +250,48 @@
 		2FF3732F1CE33AC90040B140 /* OtherViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2F6D751B1CF30A340026B79E /* containedInViewController.h */,
+				2F6D751C1CF30A340026B79E /* containedInViewController.m */,
 				2FF3732C1CE339440040B140 /* OtherViewController.h */,
 				2FF3732D1CE339440040B140 /* OtherViewController.m */,
 				2FF373301CE41CF00040B140 /* LoadMoreViewController.h */,
 				2FF373311CE41CF00040B140 /* LoadMoreViewController.m */,
 				2FF373331CE41D3F0040B140 /* WevViewViewController.h */,
 				2FF373341CE41D3F0040B140 /* WevViewViewController.m */,
+				2F5D92981CEE0D3300CC4251 /* SDWebImageViewController.h */,
+				2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */,
+				2F6810F91CEF16D300ECC09A /* NSNotificationCenterViewController.h */,
+				2F6810FA1CEF16D300ECC09A /* NSNotificationCenterViewController.m */,
+				2F6810FF1CF0312B00ECC09A /* CurrentUserAddObjViewController.h */,
+				2F6811001CF0312B00ECC09A /* CurrentUserAddObjViewController.m */,
+				2FA3B8A31CF1D62E003D98EF /* recursiveBlockViewController.h */,
+				2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */,
+				2F6811051CF0767500ECC09A /* Model */,
 			);
 			name = OtherViewController;
 			sourceTree = "<group>";
 		};
-		4EB307424EFA2C0FF8836A47 /* Frameworks */ = {
+		3B69873201F4DAC301A92774 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5027E324A6FA591D59A6DD45 /* libPods-ronglcoudHarry.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E4B94D8B9021842D642D26AD /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6EB1EE70EB81A2E566B9752B /* Pods-ronglcoudHarry.debug.xcconfig */,
-				26CE9FFD985B47B83EC6C05A /* Pods-ronglcoudHarry.release.xcconfig */,
+				D38649E9AF4B4CC6C6849F1F /* Pods-ronglcoudHarry.debug.xcconfig */,
+				D72682A2006F514B65A32607 /* Pods-ronglcoudHarry.release.xcconfig */,
+				72F70620D415290DE9E2DAEA /* Pods-ronglcoudHarryTests.debug.xcconfig */,
+				F1D0CA6C95EAE4BC6EBF5A6C /* Pods-ronglcoudHarryTests.release.xcconfig */,
+				1E5D7CF9EEADEEA55B9FDBC2 /* Pods-ronglcoudHarryUITests.debug.xcconfig */,
+				C03E8367137E4353D0B36D2D /* Pods-ronglcoudHarryUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE6B1F9C1C0634CA512B9D99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82653ACD7000D56FD5DF4302 /* libPods-ronglcoudHarry.a */,
+				C722733078AE77C26A1D5E8F /* libPods-ronglcoudHarryTests.a */,
+				8FAD69980C00AB2A45DFE18D /* libPods-ronglcoudHarryUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,12 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FC5D7D31CDADCB100916655 /* Build configuration list for PBXNativeTarget "ronglcoudHarry" */;
 			buildPhases = (
-				EA816ACC73DCBC7F8EC574EF /* Check Pods Manifest.lock */,
+				820F7BE11EA708D69900EC03 /* 📦 Check Pods Manifest.lock */,
 				2FC5D7A21CDADCB000916655 /* Sources */,
 				2FC5D7A31CDADCB000916655 /* Frameworks */,
 				2FC5D7A41CDADCB000916655 /* Resources */,
-				0E23A669632646E2C955C3E7 /* Embed Pods Frameworks */,
-				D642AE9F4F6C5DEA4B80ACB0 /* Copy Pods Resources */,
+				5B9DC3A635847E12AA598373 /* 📦 Embed Pods Frameworks */,
+				FF29B0F20FB0A98553C970C4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FC5D7D61CDADCB100916655 /* Build configuration list for PBXNativeTarget "ronglcoudHarryTests" */;
 			buildPhases = (
+				7765DEABB8A28A224B678723 /* 📦 Check Pods Manifest.lock */,
 				2FC5D7BB1CDADCB100916655 /* Sources */,
 				2FC5D7BC1CDADCB100916655 /* Frameworks */,
 				2FC5D7BD1CDADCB100916655 /* Resources */,
+				58DB870BC29CE33F8CD09002 /* 📦 Embed Pods Frameworks */,
+				1B4EBD43725B0C81E260C733 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FC5D7D91CDADCB100916655 /* Build configuration list for PBXNativeTarget "ronglcoudHarryUITests" */;
 			buildPhases = (
+				917483398B7DA79A86D9D6AA /* 📦 Check Pods Manifest.lock */,
 				2FC5D7C61CDADCB100916655 /* Sources */,
 				2FC5D7C71CDADCB100916655 /* Frameworks */,
 				2FC5D7C81CDADCB100916655 /* Resources */,
+				2BE397C9911358427E93B8D4 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,14 +430,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E23A669632646E2C955C3E7 /* Embed Pods Frameworks */ = {
+		1B4EBD43725B0C81E260C733 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarryTests/Pods-ronglcoudHarryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BE397C9911358427E93B8D4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarryUITests/Pods-ronglcoudHarryUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58DB870BC29CE33F8CD09002 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarryTests/Pods-ronglcoudHarryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9DC3A635847E12AA598373 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,34 +490,64 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D642AE9F4F6C5DEA4B80ACB0 /* Copy Pods Resources */ = {
+		7765DEABB8A28A224B678723 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA816ACC73DCBC7F8EC574EF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		820F7BE11EA708D69900EC03 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		917483398B7DA79A86D9D6AA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF29B0F20FB0A98553C970C4 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ronglcoudHarry/Pods-ronglcoudHarry-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -418,10 +557,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5D929A1CEE0D3300CC4251 /* SDWebImageViewController.m in Sources */,
 				2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */,
 				2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */,
+				2F6811011CF0312B00ECC09A /* CurrentUserAddObjViewController.m in Sources */,
 				2FF3732E1CE339440040B140 /* OtherViewController.m in Sources */,
+				2F6D751D1CF30A340026B79E /* containedInViewController.m in Sources */,
 				2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */,
+				2FA3B8A21CF1A5AE003D98EF /* RCDChatViewController.m in Sources */,
+				2F6810FB1CEF16D300ECC09A /* NSNotificationCenterViewController.m in Sources */,
 				2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */,
 				2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */,
 				2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */,
@@ -429,6 +573,8 @@
 				2F1326DC1CDF35420037F28E /* groupChatViewController.m in Sources */,
 				2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */,
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
+				2FA3B8A51CF1D62E003D98EF /* recursiveBlockViewController.m in Sources */,
+				2F6811041CF0767000ECC09A /* studentModelGlobalVariable.m in Sources */,
 				2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
 			);
@@ -569,12 +715,12 @@
 		};
 		2FC5D7D41CDADCB100916655 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EB1EE70EB81A2E566B9752B /* Pods-ronglcoudHarry.debug.xcconfig */;
+			baseConfigurationReference = D38649E9AF4B4CC6C6849F1F /* Pods-ronglcoudHarry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloud/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
 				INFOPLIST_FILE = ronglcoudHarry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongcloudharry.ronglcoudHarry;
@@ -585,12 +731,12 @@
 		};
 		2FC5D7D51CDADCB100916655 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26CE9FFD985B47B83EC6C05A /* Pods-ronglcoudHarry.release.xcconfig */;
+			baseConfigurationReference = D72682A2006F514B65A32607 /* Pods-ronglcoudHarry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloud/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
 				INFOPLIST_FILE = ronglcoudHarry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongcloudharry.ronglcoudHarry;
@@ -601,6 +747,7 @@
 		};
 		2FC5D7D71CDADCB100916655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F70620D415290DE9E2DAEA /* Pods-ronglcoudHarryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ronglcoudHarryTests/Info.plist;
@@ -613,6 +760,7 @@
 		};
 		2FC5D7D81CDADCB100916655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D0CA6C95EAE4BC6EBF5A6C /* Pods-ronglcoudHarryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = ronglcoudHarryTests/Info.plist;
@@ -625,6 +773,7 @@
 		};
 		2FC5D7DA1CDADCB100916655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E5D7CF9EEADEEA55B9FDBC2 /* Pods-ronglcoudHarryUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ronglcoudHarryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -636,6 +785,7 @@
 		};
 		2FC5D7DB1CDADCB100916655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03E8367137E4353D0B36D2D /* Pods-ronglcoudHarryUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = ronglcoudHarryUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

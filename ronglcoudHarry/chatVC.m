@@ -24,8 +24,8 @@
                                         @(ConversationType_APPSERVICE),
                                         @(ConversationType_SYSTEM)]];
     //设置需要将哪些类型的会话在会话列表中聚合显示
-    [self setCollectionConversationType:@[@(ConversationType_DISCUSSION),
-                                          @(ConversationType_GROUP)]];
+//    [self setCollectionConversationType:@[@(ConversationType_DISCUSSION),
+//                                          @(ConversationType_GROUP)]];
     
     [[RCIM sharedRCIM] connectWithToken:@"FgdWUXmnVfiuGkfAKOju0MPxV2b5Ftt3shnq/yTHLkJPBRN86LX8uuksyWT8ywEDXyocc13S+hhdQNBqCT7+AQ==" success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);

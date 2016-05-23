@@ -7,7 +7,7 @@
 //
 
 #import "groupChatViewController.h"
-
+#import "RCDChatViewController.h"
 @interface groupChatViewController ()
 
 @end
@@ -18,38 +18,31 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     DataBaseUtillity *dbs = [[DataBaseUtillity alloc] init];
-    [dbs GetNormalStudentFriend:@"asldjfasdf" block:^(AVObject *result) {
-        AVRelation *relation = [result relationForKey:@"friend"];
-        AVQuery *query = [relation query];
-        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-            if (error) {
-                // 网络错误
-                NSLog(error.description);
-            } else {
-                NSMutableArray *userIdList = [NSMutableArray new];
-                for (AVUser *user in objects) {
-                    //[discussionTitle appendString:[NSString stringWithFormat:@"%@%@", user.name,@","]];
-                    NSString *rcid = [user valueForKey:@"RCID"];
-                    
-                }
-                [userIdList addObject:@"001"];
-                [userIdList addObject:@"002"];
-                [userIdList addObject:@"003"];
-                [[RCIMClient sharedRCIMClient] createDiscussion:@"hello" userIdList:userIdList success:^(RCDiscussion *discussion) {
-                    NSLog(@"create room success");
-                    RCConversationViewController *room = [[RCConversationViewController alloc] init];
-                    room.targetId                      = discussion.discussionId;
-                    room.userName                    = discussion.discussionName;
-                    room.conversationType              = ConversationType_DISCUSSION;
-                    room.title                         = @"harrygroup";
-                } error:^(RCErrorCode status) {
-                    NSLog(@"create room error");
-                }];
-                
-                NSLog(@"success");
-            }
-        }];
+    __weak typeof(&*self)  weakSelf = self;
+    NSMutableArray *userIdList = [NSMutableArray new];
+    
+    [userIdList addObject:@"001"];
+    [userIdList addObject:@"002"];
+    [userIdList addObject:@"003"];
+    [[RCIMClient sharedRCIMClient] createDiscussion:@"hello" userIdList:userIdList success:^(RCDiscussion *discussion) {
+        NSLog(@"create room success");
+        RCDChatViewController *room = [[RCDChatViewController alloc] init];
+        room.targetId                      = discussion.discussionId;
+        room.userName                    = discussion.discussionName;
+        room.conversationType              = ConversationType_DISCUSSION;
+        room.title                         = @"harrygroup";
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UITabBarController *tabbarVC = weakSelf.navigationController.viewControllers[0];
+            [weakSelf.navigationController popToViewController:tabbarVC animated:NO];
+            room.hidesBottomBarWhenPushed = YES;
+            [tabbarVC.navigationController  pushViewController:room animated:YES];
+            
+        });
+    } error:^(RCErrorCode status) {
+        NSLog(@"create room error");
     }];
+    
+    NSLog(@"success");
     //AVUser *cuser = [AVUser currentUser];
     
     AVRelation *relation = [[AVUser currentUser] relationForKey:@"friend"];

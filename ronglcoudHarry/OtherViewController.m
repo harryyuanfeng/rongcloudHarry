@@ -11,19 +11,29 @@
 #import "DBCameraContainerViewController.h"
 #import "WevViewViewController.h"
 #import "LoadMoreViewController.h"
+#import "SDWebImageViewController.h"
+#import "NSNotificationCenterViewController.h"
+#import "CurrentUserAddObjViewController.h"
+#import "recursiveBlockViewController.h"
+#import "containedInViewController.h"
 @interface OtherViewController ()<DBCameraViewControllerDelegate>
 
 @end
 UIButton *DBCamera;
+UIButton *SDWebImage;
 UIButton *WebViewButton;
 UIButton *loadMore;
+UIButton *NSNotificationCenterButton;
+UIButton *CurrentUserAddObj;
+UIButton *recursiveBlock;
+UIButton *containedIn;
 @implementation OtherViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor grayColor]];
     
-    DBCamera = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 200, 30)];
+    DBCamera = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 300, 30)];
     [DBCamera addTarget:self action:@selector(openCamera) forControlEvents:UIControlEventTouchDown];
     [DBCamera setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [DBCamera setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
@@ -31,7 +41,7 @@ UIButton *loadMore;
     [DBCamera setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:DBCamera];
     
-    WebViewButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 240, 200, 30)];
+    WebViewButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 240, 300, 30)];
     [WebViewButton addTarget:self action:@selector(clickWebViewButton) forControlEvents:UIControlEventTouchDown];
     [WebViewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [WebViewButton setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
@@ -39,7 +49,7 @@ UIButton *loadMore;
     [WebViewButton setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:WebViewButton];
     
-    loadMore = [[UIButton alloc] initWithFrame:CGRectMake(100, 280, 200, 30)];
+    loadMore = [[UIButton alloc] initWithFrame:CGRectMake(100, 280, 300, 30)];
     [loadMore addTarget:self action:@selector(clickLoadMore) forControlEvents:UIControlEventTouchDown];
     [loadMore setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [loadMore setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
@@ -47,9 +57,108 @@ UIButton *loadMore;
     [loadMore setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:loadMore];
     
+    SDWebImage = [[UIButton alloc] initWithFrame:CGRectMake(100, 320, 300, 30)];
+    [SDWebImage addTarget:self action:@selector(clickSDWebImage) forControlEvents:UIControlEventTouchDown];
+    [SDWebImage setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [SDWebImage setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [SDWebImage setTitle:@"clickSDWebImage" forState:UIControlStateNormal];
+    [SDWebImage setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:SDWebImage];
     
-    // Do any additional setup after loading the view.
+    NSNotificationCenterButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 360, 300, 30)];
+    [NSNotificationCenterButton addTarget:self action:@selector(clickNSNotificationCenterButton) forControlEvents:UIControlEventTouchDown];
+    [NSNotificationCenterButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [NSNotificationCenterButton setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [NSNotificationCenterButton setTitle:@"clickNSNotificationCenterButton" forState:UIControlStateNormal];
+    [NSNotificationCenterButton setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:NSNotificationCenterButton];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:)
+                                                 name:@"TestNotification"
+                                               object:nil];    // Do any additional setup after loading the view.
+
+    
+    CurrentUserAddObj = [[UIButton alloc] initWithFrame:CGRectMake(100, 400, 300, 30)];
+    [CurrentUserAddObj addTarget:self action:@selector(clickCurrentUserAddObj) forControlEvents:UIControlEventTouchDown];
+    [CurrentUserAddObj setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [CurrentUserAddObj setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [CurrentUserAddObj setTitle:@"clickCurrentUserAddObj" forState:UIControlStateNormal];
+    [CurrentUserAddObj setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:CurrentUserAddObj];
+    
+    recursiveBlock = [[UIButton alloc] initWithFrame:CGRectMake(100, 440, 300, 30)];
+    [recursiveBlock addTarget:self action:@selector(clickrecursiveBlock) forControlEvents:UIControlEventTouchDown];
+    [recursiveBlock setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [recursiveBlock setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [recursiveBlock setTitle:@"clickrecursiveBlock" forState:UIControlStateNormal];
+    [recursiveBlock setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:recursiveBlock];
+    
+    containedIn = [[UIButton alloc] initWithFrame:CGRectMake(100, 480, 300, 30)];
+    [containedIn addTarget:self action:@selector(clickcontainedIn) forControlEvents:UIControlEventTouchDown];
+    [containedIn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [containedIn setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [containedIn setTitle:@"clickcontainedIn" forState:UIControlStateNormal];
+    [containedIn setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:containedIn];
 }
+
+
+-(void)clickcontainedIn{
+    containedInViewController *vc = [[containedInViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)clickrecursiveBlock{
+    recursiveBlockViewController *vc = [[recursiveBlockViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)clickCurrentUserAddObj{
+    
+   
+    
+    AVUser *user = [AVUser currentUser];
+    
+    AVObject *student = [user objectForKey:@"xyqStudent"];
+    NSString *name = [student objectForKey:@"name"];
+    AVQuery *query = [AVQuery queryWithClassName:@"xyqStudent"];
+    [query whereKey:@"user" equalTo:user];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        AVObject *obj = objects[0];
+        NSMutableDictionary *dic = [obj dictionaryForObject];
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:dic forKey:@"obj"];
+        [userDefaults synchronize];
+        
+        CurrentUserAddObjViewController* vc = [[CurrentUserAddObjViewController alloc] init];
+        [self presentViewController:vc animated:YES completion:^{
+            
+        }];
+    }];
+}
+
+- (void) receiveTestNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    if ([[notification name] isEqualToString:@"TestNotification"])
+        NSLog (@"Successfully received the test notification!");
+}
+
+-(void)clickNSNotificationCenterButton{
+    NSNotificationCenterViewController* vc = [[NSNotificationCenterViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:^{
+    }];
+}
+
+-(void)clickSDWebImage{
+     SDWebImageViewController *vc = [[SDWebImageViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 -(void)clickWebViewButton{
     WevViewViewController *webview = [[WevViewViewController alloc] init];
     [self.navigationController pushViewController:webview animated:YES];
