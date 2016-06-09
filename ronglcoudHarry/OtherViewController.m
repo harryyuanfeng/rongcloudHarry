@@ -16,17 +16,21 @@
 #import "CurrentUserAddObjViewController.h"
 #import "recursiveBlockViewController.h"
 #import "containedInViewController.h"
-@interface OtherViewController ()<DBCameraViewControllerDelegate>
+#import "expandableCellViewController.h"
+@interface OtherViewController ()<DBCameraViewControllerDelegate>{
+    UIButton *DBCamera;
+    UIButton *SDWebImage;
+    UIButton *WebViewButton;
+    UIButton *loadMore;
+    UIButton *NSNotificationCenterButton;
+    UIButton *CurrentUserAddObj;
+    UIButton *recursiveBlock;
+    UIButton *containedIn;
+    UIButton *expandableCell;
+}
 
 @end
-UIButton *DBCamera;
-UIButton *SDWebImage;
-UIButton *WebViewButton;
-UIButton *loadMore;
-UIButton *NSNotificationCenterButton;
-UIButton *CurrentUserAddObj;
-UIButton *recursiveBlock;
-UIButton *containedIn;
+
 @implementation OtherViewController
 
 - (void)viewDidLoad {
@@ -101,8 +105,20 @@ UIButton *containedIn;
     [containedIn setTitle:@"clickcontainedIn" forState:UIControlStateNormal];
     [containedIn setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:containedIn];
+    
+    expandableCell = [[UIButton alloc] initWithFrame:CGRectMake(100, 520, 300, 30)];
+    [expandableCell addTarget:self action:@selector(expandableCell) forControlEvents:UIControlEventTouchDown];
+    [expandableCell setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [expandableCell setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [expandableCell setTitle:@"expandableCell" forState:UIControlStateNormal];
+    [expandableCell setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:expandableCell];
 }
 
+-(void)expandableCell{
+    expandableCellViewController *vc = [[expandableCellViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 -(void)clickcontainedIn{
     containedInViewController *vc = [[containedInViewController alloc] init];

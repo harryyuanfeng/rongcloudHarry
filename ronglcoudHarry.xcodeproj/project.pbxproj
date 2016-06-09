@@ -29,6 +29,9 @@
 		2FC5D7B91CDADCB100916655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5D7B71CDADCB100916655 /* LaunchScreen.storyboard */; };
 		2FC5D7C41CDADCB100916655 /* ronglcoudHarryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7C31CDADCB100916655 /* ronglcoudHarryTests.m */; };
 		2FC5D7CF1CDADCB100916655 /* ronglcoudHarryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5D7CE1CDADCB100916655 /* ronglcoudHarryUITests.m */; };
+		2FCF5A751D06B5C200CBD2BC /* expandableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF5A741D06B5C200CBD2BC /* expandableCellViewController.m */; };
+		2FCF5A7B1D09592C00CBD2BC /* AVQuery+avqueryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF5A7A1D09592B00CBD2BC /* AVQuery+avqueryCategory.m */; };
+		2FCF5A7E1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */; };
 		2FF3732E1CE339440040B140 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF3732D1CE339440040B140 /* OtherViewController.m */; };
 		2FF373321CE41CF00040B140 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373311CE41CF00040B140 /* LoadMoreViewController.m */; };
 		2FF373351CE41D3F0040B140 /* WevViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF373341CE41D3F0040B140 /* WevViewViewController.m */; };
@@ -102,6 +105,12 @@
 		2FC5D7CA1CDADCB100916655 /* ronglcoudHarryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ronglcoudHarryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC5D7CE1CDADCB100916655 /* ronglcoudHarryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ronglcoudHarryUITests.m; sourceTree = "<group>"; };
 		2FC5D7D01CDADCB100916655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FCF5A731D06B5C200CBD2BC /* expandableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expandableCellViewController.h; sourceTree = "<group>"; };
+		2FCF5A741D06B5C200CBD2BC /* expandableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = expandableCellViewController.m; sourceTree = "<group>"; };
+		2FCF5A791D09592B00CBD2BC /* AVQuery+avqueryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVQuery+avqueryCategory.h"; sourceTree = "<group>"; };
+		2FCF5A7A1D09592B00CBD2BC /* AVQuery+avqueryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVQuery+avqueryCategory.m"; sourceTree = "<group>"; };
+		2FCF5A7C1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVOSCloud+AVOSCloudCategory.h"; sourceTree = "<group>"; };
+		2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVOSCloud+AVOSCloudCategory.m"; sourceTree = "<group>"; };
 		2FF3732C1CE339440040B140 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
 		2FF3732D1CE339440040B140 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		2FF373301CE41CF00040B140 /* LoadMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
@@ -250,6 +259,12 @@
 		2FF3732F1CE33AC90040B140 /* OtherViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2FCF5A7C1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.h */,
+				2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */,
+				2FCF5A791D09592B00CBD2BC /* AVQuery+avqueryCategory.h */,
+				2FCF5A7A1D09592B00CBD2BC /* AVQuery+avqueryCategory.m */,
+				2FCF5A731D06B5C200CBD2BC /* expandableCellViewController.h */,
+				2FCF5A741D06B5C200CBD2BC /* expandableCellViewController.m */,
 				2F6D751B1CF30A340026B79E /* containedInViewController.h */,
 				2F6D751C1CF30A340026B79E /* containedInViewController.m */,
 				2FF3732C1CE339440040B140 /* OtherViewController.h */,
@@ -558,11 +573,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5D929A1CEE0D3300CC4251 /* SDWebImageViewController.m in Sources */,
+				2FCF5A7E1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m in Sources */,
 				2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */,
 				2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */,
 				2F6811011CF0312B00ECC09A /* CurrentUserAddObjViewController.m in Sources */,
 				2FF3732E1CE339440040B140 /* OtherViewController.m in Sources */,
 				2F6D751D1CF30A340026B79E /* containedInViewController.m in Sources */,
+				2FCF5A751D06B5C200CBD2BC /* expandableCellViewController.m in Sources */,
 				2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */,
 				2FA3B8A21CF1A5AE003D98EF /* RCDChatViewController.m in Sources */,
 				2F6810FB1CEF16D300ECC09A /* NSNotificationCenterViewController.m in Sources */,
@@ -577,6 +594,7 @@
 				2F6811041CF0767000ECC09A /* studentModelGlobalVariable.m in Sources */,
 				2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
+				2FCF5A7B1D09592C00CBD2BC /* AVQuery+avqueryCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
