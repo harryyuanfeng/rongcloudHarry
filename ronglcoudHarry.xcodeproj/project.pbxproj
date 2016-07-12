@@ -11,6 +11,7 @@
 		2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */; };
 		2F1326E21CE035D40037F28E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E11CE035D40037F28E /* LoginViewController.m */; };
 		2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1326E41CE046950037F28E /* DataBaseUtillity.m */; };
+		2F2CC5FF1D35296300AECA6E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2CC5FE1D35296300AECA6E /* CoreLocation.framework */; };
 		2F43AE731CE1A7E600FDEFBE /* DBASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */; };
 		2F5D929A1CEE0D3300CC4251 /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */; };
 		2F65AD801CDB2A5C009962F9 /* tabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F65AD7F1CDB2A5C009962F9 /* tabBarController.m */; };
@@ -101,6 +102,7 @@
 		2F1326E31CE046950037F28E /* DataBaseUtillity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseUtillity.h; sourceTree = "<group>"; };
 		2F1326E41CE046950037F28E /* DataBaseUtillity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseUtillity.m; sourceTree = "<group>"; };
 		2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2F2CC5FE1D35296300AECA6E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2F43AE711CE1A7E600FDEFBE /* DBASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBASingleton.h; sourceTree = "<group>"; };
 		2F43AE721CE1A7E600FDEFBE /* DBASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBASingleton.m; sourceTree = "<group>"; };
 		2F5D92981CEE0D3300CC4251 /* SDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2CC5FF1D35296300AECA6E /* CoreLocation.framework in Frameworks */,
 				6DC0E0095B1AC14888B5D934 /* libPods-ronglcoudHarry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +398,7 @@
 		FE6B1F9C1C0634CA512B9D99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F2CC5FE1D35296300AECA6E /* CoreLocation.framework */,
 				2F93FD191D34E39C00865AFD /* PrefixHeader.pch */,
 				82653ACD7000D56FD5DF4302 /* libPods-ronglcoudHarry.a */,
 				C722733078AE77C26A1D5E8F /* libPods-ronglcoudHarryTests.a */,
