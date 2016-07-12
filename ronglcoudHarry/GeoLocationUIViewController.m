@@ -12,6 +12,10 @@
     CLLocationManager *locationManager;
     UITextField *longitudeLabel;
     UITextField *latitudeLabel;
+    
+    UITextField *distanceLabel;
+    
+    AVGeoPoint *point;
 }
 @end
 @implementation GeoLocationUIViewController
@@ -45,6 +49,10 @@
     latitudeLabel = [[UITextField alloc] initWithFrame:CGRectMake(100, 140, 100, 30)];
     latitudeLabel.textColor = [UIColor blackColor];
     [self.view addSubview:latitudeLabel];
+    
+    distanceLabel = [[UITextField alloc] initWithFrame:CGRectMake(100, 180, 100, 30)];
+    distanceLabel.textColor = [UIColor blackColor];
+    [self.view addSubview:distanceLabel];
 }
 
 #pragma mark - CLLocationManagerDelegate
@@ -57,6 +65,10 @@
     [errorAlert show];
 }
 
+-(void)getDistance{
+    
+}
+
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
     NSLog(@"didUpdateToLocation: %@", newLocation);
@@ -66,6 +78,11 @@
         longitudeLabel.text = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.longitude];
         latitudeLabel.text = [NSString stringWithFormat:@"%.8f", currentLocation.coordinate.latitude];
     }
+    
+    point = [AVGeoPoint geoPointWithLatitude:39.000001 longitude:116.0001];
+    double kilodisatnce = [point distanceInKilometersTo:[AVGeoPoint geoPointWithLatitude:currentLocation.coordinate.latitude longitude:currentLocation.coordinate.longitude]];
+    distanceLabel.text = [NSString stringWithFormat:@"%f", kilodisatnce];
+    
     [locationManager stopUpdatingLocation];
 }
 
