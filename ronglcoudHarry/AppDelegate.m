@@ -23,7 +23,8 @@
     [RCIM sharedRCIM].globalMessageAvatarStyle = RC_USER_AVATAR_CYCLE;
     [AVOSCloud setApplicationId:@"OAsq3BaUejlty6HR5y6LtoOA-gzGzoHsz"
                       clientKey:@"rY459mImPgBLwM4H78n3lbzI"];
-    
+    NSLog([[NSBundle mainBundle] objectForInfoDictionaryKey:@"configuration"]);
+     NSLog(DevMode);
     return YES;
 }
 

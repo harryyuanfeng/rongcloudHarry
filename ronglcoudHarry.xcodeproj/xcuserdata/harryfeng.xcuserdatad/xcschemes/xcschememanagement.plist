@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ronglcoudHarry 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>ronglcoudHarry copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>ronglcoudHarry.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2F93FC1D1D30F38000865AFD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2FC5D7A51CDADCB000916655</key>
 		<dict>
 			<key>primary</key>

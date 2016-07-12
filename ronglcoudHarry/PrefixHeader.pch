@@ -8,6 +8,7 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#import "constantsHarry.h"
 #import <RongIMKit/RongIMKit.h>
 #import <AFNetworking.h>
 #import <AFURLRequestSerialization.h>
