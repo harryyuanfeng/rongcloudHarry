@@ -8,6 +8,10 @@
 
 #import "GeoLocationUIViewController.h"
 
+@interface GeoLocationUIViewController (){
+    
+}
+@end
 @implementation GeoLocationUIViewController
 
 @end

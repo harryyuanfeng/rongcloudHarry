@@ -10,8 +10,9 @@
 #import "chatVC.h"
 #import "groupChatViewController.h"
 #import "UserSignUpViewController.h"
-#import "LoginViewController.h";
-#import "OtherViewController.h";
+#import "LoginViewController.h"
+#import "OtherViewController.h"
+#import "OtherViewControllerWithTableView.h"
 @implementation tabBarController
 
 - (void)viewDidLoad {
@@ -23,7 +24,8 @@
     groupChatViewController *view2 = [[groupChatViewController alloc] init];
     UserSignUpViewController *view3 = [[UserSignUpViewController alloc] init];
     LoginViewController *view4 = [[LoginViewController alloc] init];
-    OtherViewController *view5 = [[OtherViewController alloc] init];
+    //OtherViewController *view5 = [[OtherViewController alloc] init];
+    OtherViewControllerWithTableView *view5 = [[OtherViewControllerWithTableView alloc] init];
     NSMutableArray *tabViewControllers = [[NSMutableArray alloc] init];
     [tabViewControllers addObject:view1];
     [tabViewControllers addObject:view2];
