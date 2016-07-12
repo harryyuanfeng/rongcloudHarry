@@ -230,6 +230,8 @@
 		2F93FD1A1D34E3F400865AFD /* stageone */ = {
 			isa = PBXGroup;
 			children = (
+				2FF3732C1CE339440040B140 /* OtherViewController.h */,
+				2FF3732D1CE339440040B140 /* OtherViewController.m */,
 				2FCF5A7C1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.h */,
 				2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */,
 				2FCF5A791D09592B00CBD2BC /* AVQuery+avqueryCategory.h */,
@@ -364,8 +366,6 @@
 		2FF3732F1CE33AC90040B140 /* OtherViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2FF3732C1CE339440040B140 /* OtherViewController.h */,
-				2FF3732D1CE339440040B140 /* OtherViewController.m */,
 				2F93FD1A1D34E3F400865AFD /* stageone */,
 				2F6811051CF0767500ECC09A /* Model */,
 				2F93FD1B1D34E42800865AFD /* GeoLocationUIViewController.h */,

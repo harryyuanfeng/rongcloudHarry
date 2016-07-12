@@ -14,4 +14,8 @@
 @end
 @implementation GeoLocationUIViewController
 
+-(void)viewDidLoad{
+    
+}
+
 @end
