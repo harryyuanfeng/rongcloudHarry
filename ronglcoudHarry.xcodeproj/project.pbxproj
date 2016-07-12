@@ -46,6 +46,10 @@
 		2F93FC3B1D30F38000865AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5D7B51CDADCB100916655 /* Assets.xcassets */; };
 		2F93FC3C1D30F38000865AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC5D7B21CDADCB100916655 /* Main.storyboard */; };
 		2F93FC3D1D30F38000865AFD /* MJRefresh in Resources */ = {isa = PBXBuildFile; fileRef = 2FF373361CE43E490040B140 /* MJRefresh */; };
+		2F93FD1D1D34E42800865AFD /* GeoLocationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93FD1C1D34E42800865AFD /* GeoLocationUIViewController.m */; };
+		2F93FD1E1D34E42800865AFD /* GeoLocationUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93FD1C1D34E42800865AFD /* GeoLocationUIViewController.m */; };
+		2F93FD211D34E57800865AFD /* OtherViewControllerWithTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93FD201D34E57800865AFD /* OtherViewControllerWithTableView.m */; };
+		2F93FD221D34E57800865AFD /* OtherViewControllerWithTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F93FD201D34E57800865AFD /* OtherViewControllerWithTableView.m */; };
 		2FA3B8A21CF1A5AE003D98EF /* RCDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3B8A11CF1A5AE003D98EF /* RCDChatViewController.m */; };
 		2FA3B8A51CF1D62E003D98EF /* recursiveBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */; };
 		2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9389D1CDB40AB0059FF52 /* chatVC.m */; };
@@ -113,6 +117,11 @@
 		2F6D751C1CF30A340026B79E /* containedInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = containedInViewController.m; sourceTree = "<group>"; };
 		2F93FC441D30F38000865AFD /* ronglcoudHarryDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ronglcoudHarryDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F93FC451D30F38100865AFD /* ronglcoudHarry copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ronglcoudHarry copy-Info.plist"; path = "/Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry copy-Info.plist"; sourceTree = "<absolute>"; };
+		2F93FD191D34E39C00865AFD /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2F93FD1B1D34E42800865AFD /* GeoLocationUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocationUIViewController.h; sourceTree = "<group>"; };
+		2F93FD1C1D34E42800865AFD /* GeoLocationUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocationUIViewController.m; sourceTree = "<group>"; };
+		2F93FD1F1D34E57800865AFD /* OtherViewControllerWithTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewControllerWithTableView.h; sourceTree = "<group>"; };
+		2F93FD201D34E57800865AFD /* OtherViewControllerWithTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewControllerWithTableView.m; sourceTree = "<group>"; };
 		2F9690671D30E9930014D9BC /* constantsHarry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constantsHarry.h; sourceTree = "<group>"; };
 		2FA3B8A01CF1A5AE003D98EF /* RCDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDChatViewController.h; sourceTree = "<group>"; };
 		2FA3B8A11CF1A5AE003D98EF /* RCDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDChatViewController.m; sourceTree = "<group>"; };
@@ -218,6 +227,60 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		2F93FD1A1D34E3F400865AFD /* stageone */ = {
+			isa = PBXGroup;
+			children = (
+				2FCF5A7C1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.h */,
+				2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */,
+				2FCF5A791D09592B00CBD2BC /* AVQuery+avqueryCategory.h */,
+				2FCF5A7A1D09592B00CBD2BC /* AVQuery+avqueryCategory.m */,
+				2FCF5A731D06B5C200CBD2BC /* expandableCellViewController.h */,
+				2FCF5A741D06B5C200CBD2BC /* expandableCellViewController.m */,
+				2F6D751B1CF30A340026B79E /* containedInViewController.h */,
+				2F6D751C1CF30A340026B79E /* containedInViewController.m */,
+				2FF373301CE41CF00040B140 /* LoadMoreViewController.h */,
+				2FF373311CE41CF00040B140 /* LoadMoreViewController.m */,
+				2FF373331CE41D3F0040B140 /* WevViewViewController.h */,
+				2FF373341CE41D3F0040B140 /* WevViewViewController.m */,
+				2F5D92981CEE0D3300CC4251 /* SDWebImageViewController.h */,
+				2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */,
+				2F6810F91CEF16D300ECC09A /* NSNotificationCenterViewController.h */,
+				2F6810FA1CEF16D300ECC09A /* NSNotificationCenterViewController.m */,
+				2F6810FF1CF0312B00ECC09A /* CurrentUserAddObjViewController.h */,
+				2F6811001CF0312B00ECC09A /* CurrentUserAddObjViewController.m */,
+				2FA3B8A31CF1D62E003D98EF /* recursiveBlockViewController.h */,
+				2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */,
+			);
+			name = stageone;
+			sourceTree = "<group>";
+		};
+		2F93FD231D34E5A100865AFD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F1326E01CE035D40037F28E /* LoginViewController.h */,
+				2F1326E11CE035D40037F28E /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		2F93FD241D34E5A900865AFD /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				2F1326DD1CE02F2D0037F28E /* UserSignUpViewController.h */,
+				2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		2F93FD251D34E5B000865AFD /* GroupChat */ = {
+			isa = PBXGroup;
+			children = (
+				2F1326DA1CDF35420037F28E /* groupChatViewController.h */,
+				2F1326DB1CDF35420037F28E /* groupChatViewController.m */,
+			);
+			name = GroupChat;
+			sourceTree = "<group>";
+		};
 		2FC5D79D1CDADCB000916655 = {
 			isa = PBXGroup;
 			children = (
@@ -260,12 +323,9 @@
 				2FA9389C1CDB40AB0059FF52 /* chatVC.h */,
 				2FA9389D1CDB40AB0059FF52 /* chatVC.m */,
 				2F13C14E1CDC8AC30030E0DB /* PrefixHeader.pch */,
-				2F1326DA1CDF35420037F28E /* groupChatViewController.h */,
-				2F1326DB1CDF35420037F28E /* groupChatViewController.m */,
-				2F1326DD1CE02F2D0037F28E /* UserSignUpViewController.h */,
-				2F1326DE1CE02F2D0037F28E /* UserSignUpViewController.m */,
-				2F1326E01CE035D40037F28E /* LoginViewController.h */,
-				2F1326E11CE035D40037F28E /* LoginViewController.m */,
+				2F93FD251D34E5B000865AFD /* GroupChat */,
+				2F93FD241D34E5A900865AFD /* Signup */,
+				2F93FD231D34E5A100865AFD /* Login */,
 				2F1326E61CE0469E0037F28E /* DataBase */,
 				2FF3732F1CE33AC90040B140 /* OtherViewController */,
 				2FA3B8A01CF1A5AE003D98EF /* RCDChatViewController.h */,
@@ -304,29 +364,14 @@
 		2FF3732F1CE33AC90040B140 /* OtherViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2FCF5A7C1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.h */,
-				2FCF5A7D1D09595D00CBD2BC /* AVOSCloud+AVOSCloudCategory.m */,
-				2FCF5A791D09592B00CBD2BC /* AVQuery+avqueryCategory.h */,
-				2FCF5A7A1D09592B00CBD2BC /* AVQuery+avqueryCategory.m */,
-				2FCF5A731D06B5C200CBD2BC /* expandableCellViewController.h */,
-				2FCF5A741D06B5C200CBD2BC /* expandableCellViewController.m */,
-				2F6D751B1CF30A340026B79E /* containedInViewController.h */,
-				2F6D751C1CF30A340026B79E /* containedInViewController.m */,
 				2FF3732C1CE339440040B140 /* OtherViewController.h */,
 				2FF3732D1CE339440040B140 /* OtherViewController.m */,
-				2FF373301CE41CF00040B140 /* LoadMoreViewController.h */,
-				2FF373311CE41CF00040B140 /* LoadMoreViewController.m */,
-				2FF373331CE41D3F0040B140 /* WevViewViewController.h */,
-				2FF373341CE41D3F0040B140 /* WevViewViewController.m */,
-				2F5D92981CEE0D3300CC4251 /* SDWebImageViewController.h */,
-				2F5D92991CEE0D3300CC4251 /* SDWebImageViewController.m */,
-				2F6810F91CEF16D300ECC09A /* NSNotificationCenterViewController.h */,
-				2F6810FA1CEF16D300ECC09A /* NSNotificationCenterViewController.m */,
-				2F6810FF1CF0312B00ECC09A /* CurrentUserAddObjViewController.h */,
-				2F6811001CF0312B00ECC09A /* CurrentUserAddObjViewController.m */,
-				2FA3B8A31CF1D62E003D98EF /* recursiveBlockViewController.h */,
-				2FA3B8A41CF1D62E003D98EF /* recursiveBlockViewController.m */,
+				2F93FD1A1D34E3F400865AFD /* stageone */,
 				2F6811051CF0767500ECC09A /* Model */,
+				2F93FD1B1D34E42800865AFD /* GeoLocationUIViewController.h */,
+				2F93FD1C1D34E42800865AFD /* GeoLocationUIViewController.m */,
+				2F93FD1F1D34E57800865AFD /* OtherViewControllerWithTableView.h */,
+				2F93FD201D34E57800865AFD /* OtherViewControllerWithTableView.m */,
 			);
 			name = OtherViewController;
 			sourceTree = "<group>";
@@ -350,6 +395,7 @@
 		FE6B1F9C1C0634CA512B9D99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F93FD191D34E39C00865AFD /* PrefixHeader.pch */,
 				82653ACD7000D56FD5DF4302 /* libPods-ronglcoudHarry.a */,
 				C722733078AE77C26A1D5E8F /* libPods-ronglcoudHarryTests.a */,
 				8FAD69980C00AB2A45DFE18D /* libPods-ronglcoudHarryUITests.a */,
@@ -706,6 +752,7 @@
 				2F93FC261D30F38000865AFD /* containedInViewController.m in Sources */,
 				2F93FC271D30F38000865AFD /* expandableCellViewController.m in Sources */,
 				2F93FC281D30F38000865AFD /* DataBaseUtillity.m in Sources */,
+				2F93FD1E1D34E42800865AFD /* GeoLocationUIViewController.m in Sources */,
 				2F93FC291D30F38000865AFD /* RCDChatViewController.m in Sources */,
 				2F93FC2A1D30F38000865AFD /* NSNotificationCenterViewController.m in Sources */,
 				2F93FC2B1D30F38000865AFD /* ViewController.m in Sources */,
@@ -716,6 +763,7 @@
 				2F93FC301D30F38000865AFD /* chatVC.m in Sources */,
 				2F93FC311D30F38000865AFD /* AppDelegate.m in Sources */,
 				2F93FC321D30F38000865AFD /* recursiveBlockViewController.m in Sources */,
+				2F93FD221D34E57800865AFD /* OtherViewControllerWithTableView.m in Sources */,
 				2F93FC331D30F38000865AFD /* studentModelGlobalVariable.m in Sources */,
 				2F93FC341D30F38000865AFD /* UserSignUpViewController.m in Sources */,
 				2F93FC351D30F38000865AFD /* main.m in Sources */,
@@ -736,6 +784,7 @@
 				2F6D751D1CF30A340026B79E /* containedInViewController.m in Sources */,
 				2FCF5A751D06B5C200CBD2BC /* expandableCellViewController.m in Sources */,
 				2F1326E51CE046950037F28E /* DataBaseUtillity.m in Sources */,
+				2F93FD1D1D34E42800865AFD /* GeoLocationUIViewController.m in Sources */,
 				2FA3B8A21CF1A5AE003D98EF /* RCDChatViewController.m in Sources */,
 				2F6810FB1CEF16D300ECC09A /* NSNotificationCenterViewController.m in Sources */,
 				2FC5D7B11CDADCB100916655 /* ViewController.m in Sources */,
@@ -746,6 +795,7 @@
 				2FA9389E1CDB40AB0059FF52 /* chatVC.m in Sources */,
 				2FC5D7AE1CDADCB100916655 /* AppDelegate.m in Sources */,
 				2FA3B8A51CF1D62E003D98EF /* recursiveBlockViewController.m in Sources */,
+				2F93FD211D34E57800865AFD /* OtherViewControllerWithTableView.m in Sources */,
 				2F6811041CF0767000ECC09A /* studentModelGlobalVariable.m in Sources */,
 				2F1326DF1CE02F2D0037F28E /* UserSignUpViewController.m in Sources */,
 				2FC5D7AB1CDADCB100916655 /* main.m in Sources */,
@@ -904,7 +954,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/harryfeng/Downloads/rongcloudHarry copy 2/PrefixHeader.pch";
 				INFOPLIST_FILE = ronglcoudHarry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongcloudharry.ronglcoudHarry;
@@ -1027,7 +1077,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/harryfeng/Downloads/rongcloudHarry copy 2/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1048,7 +1098,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREFIX_HEADER = /Users/harryfeng/Downloads/rongcloudHarry/ronglcoudHarry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "/Users/harryfeng/Downloads/rongcloudHarry copy 2/PrefixHeader.pch";
 				INFOPLIST_FILE = ronglcoudHarry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rongcloudharry.ronglcoudHarry;

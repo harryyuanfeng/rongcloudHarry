@@ -17,6 +17,8 @@
 #import "recursiveBlockViewController.h"
 #import "containedInViewController.h"
 #import "expandableCellViewController.h"
+#import "GeoLocationUIViewController.h"
+
 @interface OtherViewController ()<DBCameraViewControllerDelegate>{
     UIButton *DBCamera;
     UIButton *SDWebImage;
@@ -27,6 +29,7 @@
     UIButton *recursiveBlock;
     UIButton *containedIn;
     UIButton *expandableCell;
+    UIButton *AVGeolocation1;
 }
 
 @end
@@ -113,6 +116,19 @@
     [expandableCell setTitle:@"expandableCell" forState:UIControlStateNormal];
     [expandableCell setBackgroundColor:[UIColor whiteColor]];
     [self.view addSubview:expandableCell];
+    
+    AVGeolocation1 = [[UIButton alloc] initWithFrame:CGRectMake(100, 560, 300, 30)];
+    [AVGeolocation1 addTarget:self action:@selector(clickAVGeolocation1) forControlEvents:UIControlEventTouchDown];
+    [AVGeolocation1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [AVGeolocation1 setTitleColor:[UIColor redColor] forState:UIControlEventTouchDown];
+    [AVGeolocation1 setTitle:@"clickAVGeolocation1" forState:UIControlStateNormal];
+    [AVGeolocation1 setBackgroundColor:[UIColor whiteColor]];
+    [self.view addSubview:AVGeolocation1];
+}
+
+-(void)clickAVGeolocation1{
+    GeoLocationUIViewController *vc = [[GeoLocationUIViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)expandableCell{
